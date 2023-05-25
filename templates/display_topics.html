@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+    <style>
+        h1{
+            display: inline-block;
+            background-color: cyan;
+            color: red;
+        }
+        table{
+            background-color: orange;
+            color: ;
+            text-align: center;
+        }
+        #a{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>List of  Topics</h1><br>
+
+        <table border="3px">
+            
+            <tr>
+                <th>topic_name</th>
+            </tr>
+            
+        {% for i in LTO %}
+
+            <tr>
+                 <td id="a"> {{i.topic_name}} </td>
+            </tr>
+        {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        h1{
+            display: inline-block;
+            background-color: cyan;
+            color: red;
+        }
+        table{
+            background-color: orange;
+            color: ;
+            text-align: center;
+        }
+        #a{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>List of Webpage</h1>
+        <table border="3px">
+            <tr>
+                <th>topic_name</th>
+                <th>name</th>
+                <th>email</th>
+            </tr>
+            {% for i in LWO %}
+                <tr id="a">
+                    <td>{{i.topic_name}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.email}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
